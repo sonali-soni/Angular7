@@ -1,0 +1,17 @@
+<form class="col-lg-4" [ngStyle]="{'margin-bottom.px': 40}">
+  <div class="form-group">
+    <label>Username:</label>
+    <input [(ngModel)]='username' name="username">
+  </div>
+  <div class="form-group">
+    <label>Password:</label>
+    <input [(ngModel)]='password' name="password">
+  </div>
+  <button (click)="submit()" type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<div class="col-lg-12" [ngStyle]="{'display':display}">
+  <span>Hello</span>
+  <span [ngStyle]="{'padding-left.px': 6}">{{username}}</span>
+</div>
+
